@@ -1,0 +1,88 @@
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+                   HDF5 Version: 1.12.2
+                  Configured on: Tue Jun 11 01:27:26 PDT 2024
+                  Configured by: zhaixiuxi@ubuntu
+                    Host system: x86_64-unknown-linux-gnu
+              Uname information: Linux ubuntu 5.15.0-107-generic #117~20.04.1-Ubuntu SMP Tue Apr 30 10:35:57 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+                       Byte sex: little-endian
+             Installation point: /home/zhaixiuxi/workspace/PlotOverTime_design/third_party/hdf5_install
+
+Compiling Options:
+------------------
+                     Build Mode: production
+              Debugging Symbols: no
+                        Asserts: no
+                      Profiling: no
+             Optimization Level: high
+
+Linking Options:
+----------------
+                      Libraries: static, shared
+  Statically Linked Executables: 
+                        LDFLAGS: 
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+                Extra libraries: -lz -ldl -lm 
+                       Archiver: ar
+                       AR_FLAGS: cr
+                         Ranlib: ranlib
+
+Languages:
+----------
+                              C: yes
+                     C Compiler: /opt/intel/oneapi/mpi/2021.12/bin/mpiicx
+                       CPPFLAGS: 
+                    H5_CPPFLAGS: -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: 
+                        C Flags: 
+                     H5 C Flags:   -std=c99 -Wall -Wcomment -Wdeprecated -Wextra-tokens -Wformat -Wformat-security -Wmain -Wmissing-declarations -Wmissing-prototypes -Wp64 -Wpointer-arith -Wreturn-type -Wshadow -Wstrict-prototypes -Wtrigraphs -Wuninitialized -Wunknown-pragmas -Wunused-function -Wunused-variable -Wwrite-strings -Wic-pointer -Wsign-compare   -Wl,-s   -O3
+                     AM C Flags: 
+               Shared C Library: yes
+               Static C Library: yes
+
+
+                        Fortran: no
+
+                            C++: yes
+                   C++ Compiler: /opt/intel/oneapi/mpi/2021.12/bin/mpiicpx
+                      C++ Flags: 
+                   H5 C++ Flags:   -Wall -Wcomment -Wdeprecated -Wextra-tokens -Wformat -Wformat-security -Wmain -Wmissing-declarations -Wmissing-prototypes -Wp64 -Wpointer-arith -Wreturn-type -Wshadow -Wstrict-prototypes -Wtrigraphs -Wuninitialized -Wunknown-pragmas -Wunused-function -Wunused-variable -Wwrite-strings -Wic-pointer -Wsign-compare   -Wl,-s  -O3
+                   AM C++ Flags: 
+             Shared C++ Library: yes
+             Static C++ Library: yes
+
+                           Java: no
+
+
+Features:
+---------
+                     Parallel HDF5: yes
+  Parallel Filtered Dataset Writes: yes
+                Large Parallel I/O: yes
+                High-level library: yes
+Dimension scales w/ new references: no
+                  Build HDF5 Tests: yes
+                  Build HDF5 Tools: yes
+                      Threadsafety: no
+               Default API mapping: v112
+    With deprecated public symbols: yes
+            I/O filters (external): deflate(zlib)
+                               MPE: 
+                     Map (H5M) API: no
+                        Direct VFD: no
+                        Mirror VFD: no
+                (Read-Only) S3 VFD: no
+              (Read-Only) HDFS VFD: no
+                           dmalloc: no
+    Packages w/ extra debug output: none
+                       API tracing: no
+              Using memory checker: no
+   Memory allocation sanity checks: no
+            Function stack tracing: no
+                  Use file locking: best-effort
+         Strict file format checks: no
+      Optimization instrumentation: no
