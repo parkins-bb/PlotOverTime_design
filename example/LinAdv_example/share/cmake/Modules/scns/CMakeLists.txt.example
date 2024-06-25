@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.3)
+project(JAUMIN_example CXX C Fortran)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+set(JAUMIN_NDIM 3)
+
+set(HSF_ROOT /home/chengpengzhao/Desktop/zhaoCP/HSF_Integrated/thirdparty)
+list(APPEND CMAKE_MODULE_PATH "${HSF_ROOT}/share/cmake/Modules/scns")
+find_package(HSF REQUIRED)
+include_directories(${HSF_INCLUDE_DIRS})
+add_definitions(${HSF_DEFINITIONS})
+
+file(GLOB_RECURSE src_files *.C  *.I *.f
+  fortran/${JAUMIN_NDIM}d/*.f
+  fortran/${JAUMIN_NDIM}d/*.f90)
+add_executable(main${JAUMIN_NDIM}d ${src_files})
+target_link_libraries(main${JAUMIN_NDIM}d  ${HSF_LIBRARIES} ${CMAKE_DL_LIBS})

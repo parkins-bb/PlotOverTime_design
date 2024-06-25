@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf xmlns:xi="http://www.w3.org/2001/XInclude" Version="3.0">
+ <Domain>
+  <Grid CollectionType="None" GridType="Collection" Name="block_200x40x40">
+   <Grid CollectionType="None" GridType="Collection" Name="internalMesh">
+    <Geometry Type="XYZ">
+     <DataItem Dimensions="337881 3" Name="Point Data" Format="HDF">block_200x40x40.h5:block_200x40x40/Geometry</DataItem>
+    </Geometry>
+    <Grid Name="Hexahedron">
+     <Geometry Type="XYZ">
+      <DataItem Dimensions="337881 3" Name="Point Data" Format="HDF">block_200x40x40.h5:block_200x40x40/Geometry</DataItem>
+     </Geometry>
+     <Topology Type="Hexahedron">
+      <DataItem Dimensions="2560000" DataType="Int" Format="HDF">block_200x40x40.h5:block_200x40x40/topology/Hexahedron</DataItem>
+     </Topology>
+     <Attribute Center="Cell" Name="attributeID" Type="Scalar">
+      <DataItem Dimensions="320000" Format="HDF">block_200x40x40.h5:block_200x40x40/attributeID/Hexahedron</DataItem>
+     </Attribute>
+    </Grid>
+   </Grid>
+   <Grid CollectionType="None" GridType="Collection" Name="subset">
+    <Grid Type="FACE" ID="1" Name="1">
+     <Geometry Type="XYZ">
+      <DataItem Dimensions="337881 3" Name="Point Data" Format="HDF">block_200x40x40.h5:block_200x40x40/Geometry</DataItem>
+     </Geometry>
+     <Topology Type="Mixed">
+      <DataItem Dimensions="8000" DataType="Int" Format="HDF">block_200x40x40.h5:block_200x40x40/FACE_1_Subset_Topo</DataItem>
+     </Topology>
+    </Grid>
+   </Grid>
+  </Grid>
+ </Domain>
+</Xdmf>

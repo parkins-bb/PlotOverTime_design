@@ -1,0 +1,14 @@
+prefix=/home/chengpengzhao/Desktop/zhaoCP/HSF_Integrated/thirdparty/hdf5-1.12.2/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hdf5
+Description: HDF5 (Hierarchical Data Format 5) Software Library
+Version: 1.12.2
+
+Cflags: -I${includedir}
+Libs: -L${libdir} 
+Requires: 
+Libs.private:  -lm -ldl -l/usr/lib/x86_64-linux-gnu/libz.so  -lhdf5
+Requires.private: 
