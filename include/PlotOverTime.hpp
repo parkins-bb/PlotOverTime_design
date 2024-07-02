@@ -14,6 +14,7 @@
 #include "hsfField.hpp"
 #include "ustrMesh.hpp"
 
+namespace HSF {
 
 class PlotOverTime{
 // 该类只有一个实例
@@ -62,21 +63,22 @@ public:
     void registerVariable(const int id, const HSF::SetType type, const std::string &VariableName, const HSF::Coefficient<T>& f);
 
     /*
+     * @brief 此函数为了获取节点的坐标值，将坐标值写入CSV文件，并存储在
+     * @note 节点的坐标值是实时更新的
+     * @param id:节点的坐标; time_step:时间步
+     * */
+    void outputNodeCoordinates(int id, int time_step);
+
+    /*
      * @brief 输出曲线量到缓存
      * @param time_step: 输出时的时间步; simulation_time: 输出时的物理时刻 
      * */
-    void writeData(int time_step, scalar simulation_time);
+    void writeData(int time_step);
 
     /*
      * @brief 将缓存的曲线量输出到数据文件
      * */
     void flushData();
-
-    /*
-     * @brief 存储某个特定的id和特定时间步time_step的坐标数据
-     * @param id; time_step
-     * */
-    void outputNodeCoordinates(int id, int time_step);
 
 private:
     std::string dumpDirectoryName;  // 存储输出数据文件的目录名称
@@ -106,5 +108,7 @@ private:
      * */
     std::string toString(HSF::SetType type);
 };
+
+} // namespace HSF
 
 #endif // PLOT_OVER_TIME_HPP

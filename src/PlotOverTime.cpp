@@ -1,5 +1,7 @@
 #include "PlotOverTime.hpp"
 
+namespace HSF {
+
 PlotOverTime::PlotOverTime(const std::string &dump_directory_name, HSF::Region* reg)
     : dumpDirectoryName(dump_directory_name), region(reg) {}
 
@@ -35,6 +37,7 @@ void PlotOverTime::registerByStep(int id, const HSF::SetType type, int time_step
 
 /*
  * @brief 将特定的id, SetType, time存储在容器中，并输出到CSV文件
+ * @note 暂时不用
  * */
 void PlotOverTime::registerByTime(int id, const HSF::SetType type, double time) {
     // 将SetType转换为字符串，便于输出文件命名
@@ -72,23 +75,42 @@ void PlotOverTime::registerPlotFields(const int id, const HSF::SetType type) {
     std::vector<std::vector<double>> fieldsData;
     
     // 遍历Region中的所有场
-    for (int i = 0; i < region->getFieldNum(); i++){
-        auto& field = region->getField(i);  // 直接获取场对象
-        // 如果场的类型和输入类型匹配
-        if (field.getSetType() == type) {
-            // 将场的索引和名称存储到对应的容器中
-            fieldIndices.push_back(i);
-            fieldNames.push_back(field.getName());
+    for (int i = 0; i < region->getFieldNum(); i++) {
+        auto fieldTypeIt = region->fieldsType_.find(i);
+        if (fieldTypeIt == region->fieldsType_.end()) {
+            continue;
+        }
 
-            // 获取场数据并存储在data中
-            std::vector<double> data(field.size());
-            data.reserve(field.size());
-            for (int j = 0; j < field.size(); j++) {
-                if (j == id) {
-                    data.push_back(static_cast<double>(field[j]));  // 直接访问数据
+        const std::type_index& fieldType = fieldTypeIt->second;
+
+        if (fieldType == typeid(scalar)) {
+            auto& field = region->getField<scalar>(i);
+            if (field.getSetType() == type) {
+                fieldIndices.push_back(i);
+                fieldNames.push_back(field.getName());
+                std::vector<double> data(field.size());
+                for (size_t j = 0; j < field.size(); ++j) {
+                    if (field.getIndex(j) == id) {
+                        data[j] = static_cast<double>(field[j]);
+                    }
                 }
+                fieldsData.push_back(data);
             }
-            fieldsData.push_back(data);
+        } else if (fieldType == typeid(label)) {
+            auto& field = region->getField<label>(i);
+            if (field.getSetType() == type) {
+                fieldIndices.push_back(i);
+                fieldNames.push_back(field.getName());
+                std::vector<double> data(field.size());
+                for (size_t j = 0; j < field.size(); ++j) {
+                    if (field.getIndex(j) == id) {
+                        data[j] = static_cast<double>(field[j]);
+                    }
+                }
+                fieldsData.push_back(data);
+            }
+        } else {
+            std::cerr << "Unsupported field type: " << fieldType.name() << std::endl;
         }
     }
 
@@ -119,22 +141,27 @@ void PlotOverTime::registerPlotFields(const int id, const SetType type, std::vec
     // 遍历field_ids
     for (int fieldId : field_ids) {
         // 检查场变量ID是否存在并且类型匹配
-        if (region->getFieldIndex(fieldId, type) != -1) {
+        auto typeIt = region->fieldsType_.find(fieldId);
+        if (typeIt != region->fieldsType_end() && region->getField(fieldId).getSetType() == type) {
             validFieldIds.push_back(fieldId);
-            
-            // 获取场变量对象
-            auto& field = region->getField(fieldId);
-            fieldNames.push_back(field.getName());
+            fieldNames.push_back(region->getField(fieldId).getName());
 
             // 获取场数据并存储在data中
-            std::vector<double> data(field.size());
-            data.reserve(field.size());
-            for (int j = 0; j < field.size(); ++j) {
-                if (field.getIndex(j) == id) {
-                    data.push_back(field.getValue(j));
+            std::vector<double> data;
+            if (typeIt->second == typeid(scalar)) {
+                auto& field = region->getField<scalar>(fieldId);
+                for (const auto& value : field) {
+                    data.push_back(static_cast<double>(value));
                 }
+            } else if (typeIt->second == typeid(label)) {
+                auto& field = region->getField<label>(fieldId);
+                for (const auto& value : field) {
+                    data.push_back(static_cast<double>(value));
+                }
+            } else {
+                std::cerr << "Unsupported field type for field ID " << fieldId << std::endl;
             }
-            fieldsData.push_back(data);  // 将指定id【匹配的数据存储在fieldsData容器中
+            fieldsData.push_back(data);
         }
     }
 
@@ -180,7 +207,7 @@ void PlotOverTime::outputNodeCoordinates(int id, int time_step) {
         file << time_step << ", " << id << ", " << coord[0] << ", " << coord[1] << ", " << coord[2] << std::endl;
         // 将坐标数据存储到fieldData_容器中
         std::pair<int, HSF::SetType> key = std::make_pair(id, HSF::SetType::NODE);
-        fieldData_[key].push_back({static_cast<double>(time_strp), coord[0], coord[1],coord[2]});
+        fieldData_[key].push_back({static_cast<double>(time_step), coord[0], coord[1], coord[2]});
     } else {
         std::cerr << "Node ID " << id << " not found." << std::endl;
     }
@@ -206,8 +233,9 @@ void PlotOverTime::writeData(int time_step) {
         int id = entry.second.first;
         SetType type = entry.second.second;
 
-        // (id, type)作为键
+        // (id, type)作为键, 用于查找registeredFields_中的条目
         auto key = std::make_pair(id, type);
+        // 容器中查找对应的场变量索引
         auto fieldsIt = registeredFields_.find(key);
         if (fieldsIt != registeredFields_.end()) {
             std::vector<int> field_ids = fieldsIt->second;
@@ -223,11 +251,13 @@ void PlotOverTime::writeData(int time_step) {
                     const std::type_index& fieldType = typeIt->second;
                     std::vector<double> data;
 
+                    // 如果字段类型是scalar，则获取scalar类型的数据
                     if (fieldType == typeid(scalar)) {
                         auto& field = region->getField<scalar>(field_id);
                         for (const auto& value : field) {
                             data.push_back(static_cast<double>(value));
                         }
+                    // 如果字段类型是label，则获取label类型的数据
                     } else if (fieldType == typeid(label)) {
                         auto& field = region->getField<label>(field_id);
                         for (const auto& value : field) {
@@ -246,14 +276,17 @@ void PlotOverTime::writeData(int time_step) {
             }
         }
 
-        // 处理节点坐标的特殊情况
+        // 检查SetType是否为NODE
         if (type == HSF::SetType::NODE) {
+            // 获取USTRMesh实例
             auto mesh = dynamic_cast<USTRMesh*>(region->getMesh());
             if (mesh) {
+                // 获取节点坐标
                 auto& nodeCoords = mesh->getNodeCoordinates();
                 if (nodeCoords.find(id) != nodeCoords.end()) {
                     auto& coord = nodeCoords[id];
                     std::vector<double> coordData = { static_cast<double>(time_step), coord[0], coord[1], coord[2] };
+                    // 将节点坐标数据存储在fieldData_缓存中
                     fieldData_[key].push_back(coordData);
                 } else {
                     std::cerr << "Node ID " << id << " not found." << std::endl;
@@ -266,12 +299,20 @@ void PlotOverTime::writeData(int time_step) {
 }
 
 
+/*
+ * @brief 将缓存中的数据写入相应的CSV文件
+ * */
 void PlotOverTime::flushData() {
+    // 遍历fieldData_容器中的所有条目
     for (auto& entry : fieldData_) {
+        // 提取键
         std::pair<int, HSF::SetType> key = entry.first;
+        // 提取ID
         int id = key.first;
+        // 提取SetType
         HSF::SetType type = key.second;
 
+        // 将SetType转换为字符串
         std::string typeStr = toString(type);
         std::string filename = dumpDirectoryName + "/set_" + std::to_string(id) + "_" + typeStr + ".csv";
         std::ofstream file(filename, std::ios::app);
@@ -281,6 +322,7 @@ void PlotOverTime::flushData() {
             continue;
         }
 
+        // 写入数据
         for (const auto& row : entry.second) {
             for (size_t i = 0; i < row.size(); ++i) {
                 file << row[i];
@@ -299,39 +341,40 @@ void PlotOverTime::flushData() {
 }
 
 /*******************************************使用示例********************************************
-假设使用了SetType::NODE类型记录下了field_ids为{0, 1, 2}的场变量数据，
-并且使用了SetType::FACE类型记录下了field_ids为{3, 4}的场变量数据
- * 在time_step为10的SetType::NODE类型下:
-   * Field 0: [1.0, 2.0, 3.0]
-   * Field 1: [4.0, 5.0, 6.0]
-   * Field 2: [7.0, 8.0, 9.0]
- * 在time_step为20的SetType::FACE类型下:
-   * Field 3: [0.1, 0.2, 0.3]
-   * Field 4: [0.4, 0.5, 0.6]
-那么生成的set_1_Node.csv文件为:
-    TimeStep: 10, ID: 1, Type: Node
-    1.0, 2.0, 3.0,
-    4.0, 5.0, 6.0,
-    7.0, 8.0, 9.0,
-生成的set_2_Face.csv文件为:
-    TimeStep: 20, ID: 2, Type: Face
-    0.1, 0.2, 0.3,
-    0.4, 0.5, 0.6,
+ 假设使用了SetType::NODE类型记录下了field_ids为{0, 1, 2}的场变量数据，
+ 并且使用了SetType::FACE类型记录下了field_ids为{3, 4}的场变量数据
+  * 在time_step为10的SetType::NODE类型下:
+    * Field 0: [1.0, 2.0, 3.0]
+    * Field 1: [4.0, 5.0, 6.0]
+    * Field 2: [7.0, 8.0, 9.0]
+  * 在time_step为20的SetType::FACE类型下:
+    * Field 3: [0.1, 0.2, 0.3]
+    * Field 4: [0.4, 0.5, 0.6]
+ 那么生成的set_1_Node.csv文件为:
+     TimeStep: 10, ID: 1, Type: Node
+     1.0, 2.0, 3.0,
+     4.0, 5.0, 6.0,
+     7.0, 8.0, 9.0,
+ 生成的set_2_Face.csv文件为:
+     TimeStep: 20, ID: 2, Type: Face
+     0.1, 0.2, 0.3,
+     0.4, 0.5, 0.6,
 ***********************************************************************************************/
 
 
 std::string PlotOverTime::toString(HSF::SetType type) {
     switch (type) {
         case HSF::SetType::Node:
-            return "Node";
+            return "NODE";
         case HSF::SetType::Edge:
-            return "Edge";
+            return "EDGE";
         case HSF::SetType::Face:
-            return "Face";
+            return "FACE";
         case HSF::SetType::Cell:
-            return "Cell";
+            return "CELL";
         default:
             return "Unknown element";
     }
 }
 
+} // namespace HSF
