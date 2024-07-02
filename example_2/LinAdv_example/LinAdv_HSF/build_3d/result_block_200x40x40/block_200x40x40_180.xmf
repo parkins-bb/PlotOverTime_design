@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf xmlns:xi="http://www.w3.org/2001/XInclude" Version="3.0">
+ <Domain>
+  <Grid CollectionType="None" GridType="Collection" Name="block_200x40x40">
+   <Time Value="71.99999999999996" />
+   <Grid CollectionType="None" Name="internalMesh">
+    <Geometry Type="XYZ">
+     <DataItem Dimensions="337881 3" Name="Point Data" Format="HDF">block_200x40x40_180.h5:block_200x40x40/Geometry</DataItem>
+    </Geometry>
+    <Topology Type="Mixed">
+     <DataItem Dimensions="2880000" DataType="Int" Format="HDF">block_200x40x40_180.h5:block_200x40x40/Topology</DataItem>
+    </Topology>
+    <Attribute Center="Cell" Name="attributeID" Type="Scalar">
+     <DataItem Dimensions="320000" Format="HDF">block_200x40x40_180.h5:block_200x40x40/attributeID</DataItem>
+    </Attribute>
+    <Attribute Center="Cell" Name="processID" Type="Scalar">
+     <DataItem Dimensions="320000" Format="HDF">block_200x40x40_180.h5:block_200x40x40/processID</DataItem>
+    </Attribute>
+    <Attribute Center="Cell" Name="UUU" Type="Scalar">
+     <DataItem Dimensions="320000" Format="HDF">block_200x40x40_180.h5:block_200x40x40/UUU</DataItem>
+    </Attribute>
+   </Grid>
+   <Grid CollectionType="None" GridType="Collection" Name="subset">
+    <Grid Type="FACE" ID="1" Name="1">
+     <Geometry Type="XYZ">
+      <DataItem Dimensions="337881 3" Name="Point Data" Format="HDF">block_200x40x40_180.h5:block_200x40x40/Geometry</DataItem>
+     </Geometry>
+     <Topology Type="Mixed">
+      <DataItem Dimensions="8000" DataType="Int" Format="HDF">block_200x40x40_180.h5:block_200x40x40/FACE_1_Subset_Topo</DataItem>
+     </Topology>
+    </Grid>
+   </Grid>
+  </Grid>
+ </Domain>
+</Xdmf>

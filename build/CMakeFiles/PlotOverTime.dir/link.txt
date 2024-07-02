@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/zhaixiuxi/workspace/PlotOverTime_design/lib/libPlotOverTime.a CMakeFiles/PlotOverTime.dir/src/PlotOverTime.cpp.o
+/usr/bin/ranlib /home/zhaixiuxi/workspace/PlotOverTime_design/lib/libPlotOverTime.a

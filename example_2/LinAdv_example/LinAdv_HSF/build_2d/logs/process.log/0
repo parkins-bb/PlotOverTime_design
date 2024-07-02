@@ -1,0 +1,65 @@
+input_filename = ../input/linadv-3d/linadv-3d.input
+
+Check input data and variables before simulation:
+Input database...
+input_db {
+   Main {
+      log_file_name               = "3d-Hex.log"            // input used
+      log_all_nodes               = TRUE                    // input used
+      javis_dump_interval         = 10                      // input used
+      javis_dump_dirname          = "javis_test3d_Hex"      // input used
+      javis_number_procs_per_file = 1                       // input used
+      restart_dump_interval       = 10                      // input used
+      restart_dump_dirname        = "restart_test3d-Hex"    // input not used
+   }
+   LinAdv {
+      constant_x_velocity = 0.1                             // input used
+   }
+   GridGeometry {
+      MeshImportationParameter {
+         lb_method    = "RCB"                               // input used
+         refine_times = 0                                   // input not used
+         file_name    = "../input/linadv-3d/block_200x40x40.k" // input used
+      }
+   }
+   GridTopology {
+      ghost_type = "FACE"                                   // input used
+   }
+   HierarchyTimeIntegrator {
+      start_time           = 0                              // input used
+      end_time             = 100                            // input used
+      max_integrator_steps = 1000                           // input used
+      max_dt               = 1                              // input used
+      grow_dt              = 1.2                            // input used
+      GriddingAlgorithm {
+         patch_size           = 500                         // input not used
+         num_patch_per_thread = 16                          // input not used
+      }
+   }
+   JaVisDataWriter {
+   }
+   TimerManager {
+      timer_list      = "*::*::*"                           // input not used
+      print_summed    = TRUE                                // input not used
+      print_max       = TRUE                                // input not used
+      print_threshold = 0                                   // input not used
+   }
+}
+
+Variable database...
+Field name: node
+id: 0, type: 0, context: 0, hasGhost?: 0
+Field name: uval
+id: 1, type: 3, context: 0, hasGhost?: 0
+Field name: uval
+id: 2, type: 3, context: 1, hasGhost?: 0
+Field name: flux
+id: 3, type: 2, context: 1, hasGhost?: 0
+Field name: uval
+id: 4, type: 3, context: 100, hasGhost?: 1
+Field name: label
+id: 5, type: 3, context: 0, hasGhost?: 0
+Field name: cellCoord
+id: 6, type: 3, context: 100, hasGhost?: 1
+Field name: nodeCoord
+id: 7, type: 0, context: 100, hasGhost?: 1

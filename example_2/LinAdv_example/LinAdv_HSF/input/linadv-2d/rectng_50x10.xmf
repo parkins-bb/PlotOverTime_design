@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf xmlns:xi="http://www.w3.org/2001/XInclude" Version="3.0">
+ <Domain>
+  <Grid CollectionType="None" GridType="Collection" Name="rectng_50x10">
+   <Grid CollectionType="None" GridType="Collection" Name="internalMesh">
+    <Geometry Type="XYZ">
+     <DataItem Dimensions="561 3" Name="Point Data" Format="HDF">rectng_50x10.h5:rectng_50x10/Geometry</DataItem>
+    </Geometry>
+    <Grid Name="Quadrilateral">
+     <Geometry Type="XYZ">
+      <DataItem Dimensions="561 3" Name="Point Data" Format="HDF">rectng_50x10.h5:rectng_50x10/Geometry</DataItem>
+     </Geometry>
+     <Topology Type="Quadrilateral">
+      <DataItem Dimensions="2000" DataType="Int" Format="HDF">rectng_50x10.h5:rectng_50x10/topology/Quadrilateral</DataItem>
+     </Topology>
+     <Attribute Center="Cell" Name="attributeID" Type="Scalar">
+      <DataItem Dimensions="500" Format="HDF">rectng_50x10.h5:rectng_50x10/attributeID/Quadrilateral</DataItem>
+     </Attribute>
+    </Grid>
+   </Grid>
+   <Grid CollectionType="None" GridType="Collection" Name="subset">
+    <Grid Type="EDGE" ID="1" Name="1">
+     <Geometry Type="XYZ">
+      <DataItem Dimensions="561 3" Name="Point Data" Format="HDF">rectng_50x10.h5:rectng_50x10/Geometry</DataItem>
+     </Geometry>
+     <Topology Type="Mixed">
+      <DataItem Dimensions="40" DataType="Int" Format="HDF">rectng_50x10.h5:rectng_50x10/EDGE_1_Subset_Topo</DataItem>
+     </Topology>
+    </Grid>
+   </Grid>
+  </Grid>
+ </Domain>
+</Xdmf>
