@@ -62,25 +62,32 @@ class Field : public std::vector<T> {
   virtual ~Field() {}
   /*! * * * * * * * * * * * * * * *  * * * * * * * * * * * * * */
   /*! field name */
+  /*! 获得物理场名称*/
   Word getName() const { return name_; }
   void setName(Word name) { name_ = name; }
   /*! field based mesh */
+  /*! 获得物理场依附的网格类*/
   Mesh* getMesh() const { return mesh_; }
   void setMesh(Mesh* mesh) { mesh_ = mesh; }
   /*!< field data location */
+  /*! 获得物理场数据位置*/
   SetType getSetType() const { return type_; }
   void setSetType(SetType t) { type_ = t; }
   /*!< field time step */
+  /*! 获得时间步信息*/
   TIMESTEP getContext() const { return t_; }
   void setContext(TIMESTEP t) { t_ = t; }
   /*!< field ghost info */
+  /*! 判断物理场是否含有影响区*/
   bool getHasGhost() const { return hasGhost_; }
   void setHasGhost(bool torf) { hasGhost_ = torf; }
+  /*! 获得物理场本地长度（不含影像区）*/
   label getRealNum() const { return realNum_; }
   /*!< field time stamp */
   scalar getTime() const { return time_; }
   void setTime(scalar t) { time_ = t; }
-
+  
+  /*! 获得物理场单个元素长度*/
   label getEntityNum() const { return this->size() / length_; }
 
   /*! * * * * * * * * * * * * * * *  * * * * * * * * * * * * * */

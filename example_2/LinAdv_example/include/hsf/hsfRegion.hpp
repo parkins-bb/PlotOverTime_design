@@ -17,13 +17,13 @@ namespace HSF {
 class Region {
  protected:
   Word regName_;  ///< 计算域名
-  Mesh* mesh_;
-  label fieldNum_;
-  label idcount_;
-  map<Word, map<std::pair<SetType, TIMESTEP>, int> > fieldsMap_;
-  map<int, void*> fields_;
-  map<int, std::type_index> fieldsType_;
-  std::map<int, Word> plotFields_;
+  Mesh* mesh_;  // 指向与该区域相关联的网格的指针
+  label fieldNum_;  // 区域中的场数量
+  label idcount_;   // 场ID的计数器
+  map<Word, map<std::pair<SetType, TIMESTEP>, int> > fieldsMap_;  // 将字段名称及其类型/时间步映射到整数索引
+  map<int, void*> fields_;  // 将整数索引映射到场的void指针
+  map<int, std::type_index> fieldsType_;  // 将整数索引映射到场的类型
+  std::map<int, Word> plotFields_;  // 将索引映射到用于绘图的场名称
 
  public:
   /*-----------------------------构造析构----------------------------*/

@@ -28,7 +28,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+        /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/3.28.3/CompilerIdCXX/a.out
       
   -
     kind: "message-v1"
@@ -50,7 +50,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/3.28.3/CompilerIdC/a.out
+        /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/3.28.3/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -78,7 +78,7 @@ events:
       Thread model: posix
       gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
       COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-       /usr/lib/gcc/x86_64-linux-gnu/9/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/ccjy6zjN.f90 -quiet -v -imultiarch x86_64-linux-gnu CMakeFortranCompilerId.F -quiet -dumpbase CMakeFortranCompilerId.F -mtune=generic -march=x86-64 -auxbase CMakeFortranCompilerId -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/9/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/cclBQlPN.s
+       /usr/lib/gcc/x86_64-linux-gnu/9/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/ccsNKiMM.f90 -quiet -v -imultiarch x86_64-linux-gnu CMakeFortranCompilerId.F -quiet -dumpbase CMakeFortranCompilerId.F -mtune=generic -march=x86-64 -auxbase CMakeFortranCompilerId -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/9/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccMsENsO.s
       GNU Fortran (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
       	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
       
@@ -111,7 +111,7 @@ events:
       
       GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
       COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-       as -v --64 -o /tmp/ccAFn9QN.o /tmp/cclBQlPN.s
+       as -v --64 -o /tmp/ccnfC8mO.o /tmp/ccMsENsO.s
       GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
       Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgfortran.spec
       rename spec lib to liborig
@@ -119,14 +119,14 @@ events:
       COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
       LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
       COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-       /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnWG5NL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. /tmp/ccAFn9QN.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+       /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0pNGhP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. /tmp/ccnfC8mO.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
       COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
       
       
       Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
       
       The Fortran compiler identification is GNU, found in:
-        /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/3.28.3/CompilerIdFortran/a.out
+        /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/3.28.3/CompilerIdFortran/a.out
       
   -
     kind: "try_compile-v1"
@@ -137,8 +137,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-neO5Hy"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-neO5Hy"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-y78sQC"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-y78sQC"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -146,13 +146,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-neO5Hy'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-y78sQC'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1ed0f/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_1ed0f.dir/build.make CMakeFiles/cmTC_1ed0f.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-neO5Hy'
-        Building CXX object CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_024d2/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_024d2.dir/build.make CMakeFiles/cmTC_024d2.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-y78sQC'
+        Building CXX object CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -161,8 +161,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccqEKe2o.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccXUYPio.s
         GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -198,15 +198,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccqEKe2o.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXUYPio.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_1ed0f
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ed0f.dir/link.txt --verbose=1
-        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1ed0f 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_024d2
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_024d2.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_024d2 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -218,10 +218,10 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1ed0f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOLDHwQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1ed0f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1ed0f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-neO5Hy'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_024d2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIeg4QQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_024d2 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_024d2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-y78sQC'
         
       exitCode: 0
   -
@@ -285,13 +285,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-neO5Hy']
+        ignore line: [Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-y78sQC']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1ed0f/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_1ed0f.dir/build.make CMakeFiles/cmTC_1ed0f.dir/build]
-        ignore line: [make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-neO5Hy']
-        ignore line: [Building CXX object CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_024d2/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_024d2.dir/build.make CMakeFiles/cmTC_024d2.dir/build]
+        ignore line: [make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-y78sQC']
+        ignore line: [Building CXX object CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -300,8 +300,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccqEKe2o.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccXUYPio.s]
         ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -337,15 +337,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccqEKe2o.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXUYPio.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_1ed0f]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ed0f.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1ed0f ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_024d2]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_024d2.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_024d2 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -357,13 +357,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1ed0f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOLDHwQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1ed0f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_024d2' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIeg4QQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_024d2 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccOLDHwQ.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccIeg4QQ.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -382,7 +382,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_1ed0f] ==> ignore
+          arg [cmTC_024d2] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -414,7 +414,7 @@ events:
           arg [-L/opt/intel/oneapi/compiler/2024.1/lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/lib]
           arg [-L/opt/intel/oneapi/ccl/2021.12/lib] ==> dir [/opt/intel/oneapi/ccl/2021.12/lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_1ed0f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_024d2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -470,8 +470,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gjFUFy"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gjFUFy"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gVCyoH"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gVCyoH"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -479,13 +479,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gjFUFy'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gVCyoH'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c2488/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_c2488.dir/build.make CMakeFiles/cmTC_c2488.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gjFUFy'
-        Building C object CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_120df/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_120df.dir/build.make CMakeFiles/cmTC_120df.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gVCyoH'
+        Building C object CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -494,8 +494,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjXk1z0.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cchQBXYY.s
         GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -527,15 +527,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o /tmp/ccjXk1z0.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o /tmp/cchQBXYY.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_c2488
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2488.dir/link.txt --verbose=1
-        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o -o cmTC_c2488 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_120df
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_120df.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o -o cmTC_120df 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -547,10 +547,10 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c2488' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cczvsEGp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c2488 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c2488' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gjFUFy'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_120df' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGRVETo.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_120df /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_120df' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gVCyoH'
         
       exitCode: 0
   -
@@ -608,13 +608,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gjFUFy']
+        ignore line: [Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gVCyoH']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c2488/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_c2488.dir/build.make CMakeFiles/cmTC_c2488.dir/build]
-        ignore line: [make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gjFUFy']
-        ignore line: [Building C object CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_120df/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_120df.dir/build.make CMakeFiles/cmTC_120df.dir/build]
+        ignore line: [make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-gVCyoH']
+        ignore line: [Building C object CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -623,8 +623,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjXk1z0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cchQBXYY.s]
         ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -656,15 +656,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o /tmp/ccjXk1z0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o /tmp/cchQBXYY.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_c2488]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2488.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o -o cmTC_c2488 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_120df]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_120df.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o -o cmTC_120df ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -676,13 +676,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c2488' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cczvsEGp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c2488 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_120df' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGRVETo.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_120df /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cczvsEGp.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccGRVETo.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -701,7 +701,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_c2488] ==> ignore
+          arg [cmTC_120df] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -733,7 +733,7 @@ events:
           arg [-L/opt/intel/oneapi/compiler/2024.1/lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/lib]
           arg [-L/opt/intel/oneapi/ccl/2021.12/lib] ==> dir [/opt/intel/oneapi/ccl/2021.12/lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_c2488.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_120df.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -793,8 +793,8 @@ events:
     checks:
       - "Detecting Fortran compiler ABI info"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-j2vP7B"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-j2vP7B"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-C3LwoH"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-C3LwoH"
     cmakeVariables:
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_Fortran_FLAGS: ""
@@ -802,13 +802,13 @@ events:
       variable: "CMAKE_Fortran_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-j2vP7B'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-C3LwoH'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98e87/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_98e87.dir/build.make CMakeFiles/cmTC_98e87.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-j2vP7B'
-        Building Fortran object CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o
-        /usr/bin/gfortran   -v -c /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c9375/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c9375.dir/build.make CMakeFiles/cmTC_c9375.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-C3LwoH'
+        Building Fortran object CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o
+        /usr/bin/gfortran   -v -c /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o
         Using built-in specs.
         COLLECT_GCC=/usr/bin/gfortran
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -817,8 +817,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/f951 /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/cc58J1Cy.f90 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -quiet -dumpbase CMakeFortranCompilerABI.F90 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/9/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/cca7KANw.s
+        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/f951 /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/ccGcR0gx.f90 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -quiet -dumpbase CMakeFortranCompilerABI.F90 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/9/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccd7XbqA.s
         GNU Fortran (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -850,16 +850,16 @@ events:
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o /tmp/cca7KANw.s
+        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o /tmp/ccd7XbqA.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64'
-        Linking Fortran executable cmTC_98e87
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98e87.dir/link.txt --verbose=1
-        /usr/bin/gfortran  -v CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o -o cmTC_98e87 
-        Driving: /usr/bin/gfortran -v CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o -o cmTC_98e87 -l gfortran -l m -shared-libgcc
+        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64'
+        Linking Fortran executable cmTC_c9375
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9375.dir/link.txt --verbose=1
+        /usr/bin/gfortran  -v CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o -o cmTC_c9375 
+        Driving: /usr/bin/gfortran -v CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o -o cmTC_c9375 -l gfortran -l m -shared-libgcc
         Using built-in specs.
         COLLECT_GCC=/usr/bin/gfortran
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -871,13 +871,13 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgfortran.spec
         rename spec lib to liborig
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98e87' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c9375' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98e87' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cchCUpKY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_98e87 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98e87' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-j2vP7B'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c9375' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBp63O0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c9375 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c9375' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-C3LwoH'
         
       exitCode: 0
   -
@@ -937,13 +937,13 @@ events:
     message: |
       Parsed Fortran implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-j2vP7B']
+        ignore line: [Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-C3LwoH']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98e87/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_98e87.dir/build.make CMakeFiles/cmTC_98e87.dir/build]
-        ignore line: [make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-j2vP7B']
-        ignore line: [Building Fortran object CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o]
-        ignore line: [/usr/bin/gfortran   -v -c /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o]
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c9375/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_c9375.dir/build.make CMakeFiles/cmTC_c9375.dir/build]
+        ignore line: [make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-C3LwoH']
+        ignore line: [Building Fortran object CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o]
+        ignore line: [/usr/bin/gfortran   -v -c /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/gfortran]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -952,8 +952,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/f951 /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/cc58J1Cy.f90 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -quiet -dumpbase CMakeFortranCompilerABI.F90 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/9/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/cca7KANw.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/f951 /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/ccGcR0gx.f90 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.28/Modules/CMakeFortranCompilerABI.F90 -quiet -dumpbase CMakeFortranCompilerABI.F90 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o -version -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/9/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccd7XbqA.s]
         ignore line: [GNU Fortran (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -985,16 +985,16 @@ events:
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o /tmp/cca7KANw.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o /tmp/ccd7XbqA.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking Fortran executable cmTC_98e87]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98e87.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/gfortran  -v CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o -o cmTC_98e87 ]
-        ignore line: [Driving: /usr/bin/gfortran -v CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o -o cmTC_98e87 -l gfortran -l m -shared-libgcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking Fortran executable cmTC_c9375]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9375.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/gfortran  -v CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o -o cmTC_c9375 ]
+        ignore line: [Driving: /usr/bin/gfortran -v CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o -o cmTC_c9375 -l gfortran -l m -shared-libgcc]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/gfortran]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -1006,16 +1006,16 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgfortran.spec]
         ignore line: [rename spec lib to liborig]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98e87' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c9375' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib/:/opt/intel/oneapi/mpi/2021.12/lib/../lib/:/opt/intel/oneapi/mkl/2024.1/lib/../lib/:/opt/intel/oneapi/ippcp/2021.11/lib/../lib/:/opt/intel/oneapi/ipp/2021.11/lib/../lib/:/opt/intel/oneapi/dpl/2022.5/lib/../lib/:/opt/intel/oneapi/dnnl/2024.1/lib/../lib/:/opt/intel/oneapi/dal/2024.2/lib/../lib/:/opt/intel/oneapi/compiler/2024.1/lib/../lib/:/opt/intel/oneapi/ccl/2021.12/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.12/lib/:/opt/intel/oneapi/mkl/2024.1/lib/:/opt/intel/oneapi/ippcp/2021.11/lib/:/opt/intel/oneapi/ipp/2021.11/lib/:/opt/intel/oneapi/dpl/2022.5/lib/:/opt/intel/oneapi/dnnl/2024.1/lib/:/opt/intel/oneapi/dal/2024.2/lib/:/opt/intel/oneapi/compiler/2024.1/lib/:/opt/intel/oneapi/ccl/2021.12/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_98e87' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cchCUpKY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_98e87 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c9375' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBp63O0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c9375 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8/../lib -L/opt/intel/oneapi/mpi/2021.12/lib/../lib -L/opt/intel/oneapi/mkl/2024.1/lib/../lib -L/opt/intel/oneapi/ippcp/2021.11/lib/../lib -L/opt/intel/oneapi/ipp/2021.11/lib/../lib -L/opt/intel/oneapi/dpl/2022.5/lib/../lib -L/opt/intel/oneapi/dnnl/2024.1/lib/../lib -L/opt/intel/oneapi/dal/2024.2/lib/../lib -L/opt/intel/oneapi/compiler/2024.1/lib/../lib -L/opt/intel/oneapi/ccl/2021.12/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/opt/intel/oneapi/tbb/2021.12/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.12/lib -L/opt/intel/oneapi/mkl/2024.1/lib -L/opt/intel/oneapi/ippcp/2021.11/lib -L/opt/intel/oneapi/ipp/2021.11/lib -L/opt/intel/oneapi/dpl/2022.5/lib -L/opt/intel/oneapi/dnnl/2024.1/lib -L/opt/intel/oneapi/dal/2024.2/lib -L/opt/intel/oneapi/compiler/2024.1/lib -L/opt/intel/oneapi/ccl/2021.12/lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cchCUpKY.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccBp63O0.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lquadmath] ==> ignore
@@ -1037,7 +1037,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_98e87] ==> ignore
+          arg [cmTC_c9375] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -1069,7 +1069,7 @@ events:
           arg [-L/opt/intel/oneapi/compiler/2024.1/lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/lib]
           arg [-L/opt/intel/oneapi/ccl/2021.12/lib] ==> dir [/opt/intel/oneapi/ccl/2021.12/lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_98e87.dir/CMakeFortranCompilerABI.F90.o] ==> ignore
+          arg [CMakeFiles/cmTC_c9375.dir/CMakeFortranCompilerABI.F90.o] ==> ignore
           arg [-lgfortran] ==> lib [gfortran]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1126,37 +1126,37 @@ events:
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
       - "CMakeLists.txt:13 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-Y9YVey"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-Y9YVey"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-hHbClH"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-hHbClH"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns"
+      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns"
     buildResult:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-Y9YVey'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-hHbClH'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_48539/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_48539.dir/build.make CMakeFiles/cmTC_48539.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-Y9YVey'
-        Building C object CMakeFiles/cmTC_48539.dir/test_mpi.c.o
-        /usr/bin/cc  -isystem /opt/intel/oneapi/mpi/2021.12/include  -o CMakeFiles/cmTC_48539.dir/test_mpi.c.o -c /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-Y9YVey/test_mpi.c
-        Linking C executable cmTC_48539
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48539.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_48539.dir/test_mpi.c.o -o cmTC_48539  /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-Y9YVey'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_33d8d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_33d8d.dir/build.make CMakeFiles/cmTC_33d8d.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-hHbClH'
+        Building C object CMakeFiles/cmTC_33d8d.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /opt/intel/oneapi/mpi/2021.12/include  -o CMakeFiles/cmTC_33d8d.dir/test_mpi.c.o -c /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-hHbClH/test_mpi.c
+        Linking C executable cmTC_33d8d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33d8d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_33d8d.dir/test_mpi.c.o -o cmTC_33d8d  /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-hHbClH'
         
       exitCode: 0
   -
@@ -1165,37 +1165,37 @@ events:
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
       - "CMakeLists.txt:13 (find_package)"
     description: "The MPI test test_mpi for CXX in mode normal"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-9ttaRz"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-9ttaRz"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-LRAkAD"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-LRAkAD"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns"
+      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns"
     buildResult:
       variable: "MPI_RESULT_CXX_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-9ttaRz'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-LRAkAD'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a8e88/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_a8e88.dir/build.make CMakeFiles/cmTC_a8e88.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-9ttaRz'
-        Building CXX object CMakeFiles/cmTC_a8e88.dir/test_mpi.cpp.o
-        /usr/bin/c++  -isystem /opt/intel/oneapi/mpi/2021.12/include  -o CMakeFiles/cmTC_a8e88.dir/test_mpi.cpp.o -c /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-9ttaRz/test_mpi.cpp
-        Linking CXX executable cmTC_a8e88
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8e88.dir/link.txt --verbose=1
-        /usr/bin/c++ -rdynamic -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_a8e88.dir/test_mpi.cpp.o -o cmTC_a8e88  /opt/intel/oneapi/mpi/2021.12/lib/libmpicxx.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-9ttaRz'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3360d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3360d.dir/build.make CMakeFiles/cmTC_3360d.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-LRAkAD'
+        Building CXX object CMakeFiles/cmTC_3360d.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /opt/intel/oneapi/mpi/2021.12/include  -o CMakeFiles/cmTC_3360d.dir/test_mpi.cpp.o -c /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-LRAkAD/test_mpi.cpp
+        Linking CXX executable cmTC_3360d
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3360d.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_3360d.dir/test_mpi.cpp.o -o cmTC_3360d  /opt/intel/oneapi/mpi/2021.12/lib/libmpicxx.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-LRAkAD'
         
       exitCode: 0
   -
@@ -1203,37 +1203,37 @@ events:
     backtrace:
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
       - "CMakeLists.txt:13 (find_package)"
     description: "The MPI test test_mpi for CXX in mode MPICXX"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-kaZS8z"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-kaZS8z"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-W7cQuE"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-W7cQuE"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns"
+      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns"
     buildResult:
       variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-kaZS8z'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-W7cQuE'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6074b/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_6074b.dir/build.make CMakeFiles/cmTC_6074b.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-kaZS8z'
-        Building CXX object CMakeFiles/cmTC_6074b.dir/test_mpi.cpp.o
-        /usr/bin/c++  -isystem /opt/intel/oneapi/mpi/2021.12/include  -o CMakeFiles/cmTC_6074b.dir/test_mpi.cpp.o -c /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-kaZS8z/test_mpi.cpp
-        Linking CXX executable cmTC_6074b
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6074b.dir/link.txt --verbose=1
-        /usr/bin/c++ -rdynamic -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_6074b.dir/test_mpi.cpp.o -o cmTC_6074b  /opt/intel/oneapi/mpi/2021.12/lib/libmpicxx.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-kaZS8z'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8edb9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_8edb9.dir/build.make CMakeFiles/cmTC_8edb9.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-W7cQuE'
+        Building CXX object CMakeFiles/cmTC_8edb9.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /opt/intel/oneapi/mpi/2021.12/include  -o CMakeFiles/cmTC_8edb9.dir/test_mpi.cpp.o -c /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-W7cQuE/test_mpi.cpp
+        Linking CXX executable cmTC_8edb9
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8edb9.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_8edb9.dir/test_mpi.cpp.o -o cmTC_8edb9  /opt/intel/oneapi/mpi/2021.12/lib/libmpicxx.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-W7cQuE'
         
       exitCode: 0
   -
@@ -1242,37 +1242,37 @@ events:
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1297 (_MPI_try_staged_settings)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
       - "CMakeLists.txt:13 (find_package)"
     description: "The MPI test test_mpi for Fortran in mode F77_HEADER"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-rtuhvA"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-rtuhvA"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-jp7kqD"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-jp7kqD"
     cmakeVariables:
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_Fortran_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns"
+      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns"
     buildResult:
       variable: "MPI_RESULT_Fortran_test_mpi_F77_HEADER"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-rtuhvA'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-jp7kqD'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_77c84/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_77c84.dir/build.make CMakeFiles/cmTC_77c84.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-rtuhvA'
-        Building Fortran object CMakeFiles/cmTC_77c84.dir/test_mpi.f90.o
-        /usr/bin/gfortran  -I/opt/intel/oneapi/mpi/2021.12/include/mpi/gfortran/9.1.0 -I/opt/intel/oneapi/mpi/2021.12/include -I/opt/intel/oneapi/mpi/2021.12/include/mpi  -c /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-rtuhvA/test_mpi.f90 -o CMakeFiles/cmTC_77c84.dir/test_mpi.f90.o
-        Linking Fortran executable cmTC_77c84
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77c84.dir/link.txt --verbose=1
-        /usr/bin/gfortran -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_77c84.dir/test_mpi.f90.o -o cmTC_77c84  /opt/intel/oneapi/mpi/2021.12/lib/libmpifort.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-rtuhvA'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1fd79/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_1fd79.dir/build.make CMakeFiles/cmTC_1fd79.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-jp7kqD'
+        Building Fortran object CMakeFiles/cmTC_1fd79.dir/test_mpi.f90.o
+        /usr/bin/gfortran  -I/opt/intel/oneapi/mpi/2021.12/include/mpi/gfortran/9.1.0 -I/opt/intel/oneapi/mpi/2021.12/include -I/opt/intel/oneapi/mpi/2021.12/include/mpi  -c /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-jp7kqD/test_mpi.f90 -o CMakeFiles/cmTC_1fd79.dir/test_mpi.f90.o
+        Linking Fortran executable cmTC_1fd79
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fd79.dir/link.txt --verbose=1
+        /usr/bin/gfortran -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_1fd79.dir/test_mpi.f90.o -o cmTC_1fd79  /opt/intel/oneapi/mpi/2021.12/lib/libmpifort.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-jp7kqD'
         
       exitCode: 0
   -
@@ -1281,37 +1281,37 @@ events:
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1298 (_MPI_try_staged_settings)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
       - "CMakeLists.txt:13 (find_package)"
     description: "The MPI test test_mpi for Fortran in mode F90_MODULE"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-YQKYyz"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-YQKYyz"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-4t65aD"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-4t65aD"
     cmakeVariables:
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_Fortran_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns"
+      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns"
     buildResult:
       variable: "MPI_RESULT_Fortran_test_mpi_F90_MODULE"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-YQKYyz'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-4t65aD'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_502f5/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_502f5.dir/build.make CMakeFiles/cmTC_502f5.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-YQKYyz'
-        Building Fortran object CMakeFiles/cmTC_502f5.dir/test_mpi.f90.o
-        /usr/bin/gfortran  -I/opt/intel/oneapi/mpi/2021.12/include/mpi/gfortran/9.1.0 -I/opt/intel/oneapi/mpi/2021.12/include -I/opt/intel/oneapi/mpi/2021.12/include/mpi  -c /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-YQKYyz/test_mpi.f90 -o CMakeFiles/cmTC_502f5.dir/test_mpi.f90.o
-        Linking Fortran executable cmTC_502f5
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_502f5.dir/link.txt --verbose=1
-        /usr/bin/gfortran -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_502f5.dir/test_mpi.f90.o -o cmTC_502f5  /opt/intel/oneapi/mpi/2021.12/lib/libmpifort.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-YQKYyz'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5bf5b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_5bf5b.dir/build.make CMakeFiles/cmTC_5bf5b.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-4t65aD'
+        Building Fortran object CMakeFiles/cmTC_5bf5b.dir/test_mpi.f90.o
+        /usr/bin/gfortran  -I/opt/intel/oneapi/mpi/2021.12/include/mpi/gfortran/9.1.0 -I/opt/intel/oneapi/mpi/2021.12/include -I/opt/intel/oneapi/mpi/2021.12/include/mpi  -c /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-4t65aD/test_mpi.f90 -o CMakeFiles/cmTC_5bf5b.dir/test_mpi.f90.o
+        Linking Fortran executable cmTC_5bf5b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bf5b.dir/link.txt --verbose=1
+        /usr/bin/gfortran -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_5bf5b.dir/test_mpi.f90.o -o cmTC_5bf5b  /opt/intel/oneapi/mpi/2021.12/lib/libmpifort.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-4t65aD'
         
       exitCode: 0
   -
@@ -1320,38 +1320,38 @@ events:
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1299 (_MPI_try_staged_settings)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
       - "CMakeLists.txt:13 (find_package)"
     description: "The MPI test test_mpi for Fortran in mode F08_MODULE"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-azG80B"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-azG80B"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-MT6pdE"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-MT6pdE"
     cmakeVariables:
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_Fortran_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns"
+      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns"
     buildResult:
       variable: "MPI_RESULT_Fortran_test_mpi_F08_MODULE"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-azG80B'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-MT6pdE'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_51fa1/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_51fa1.dir/build.make CMakeFiles/cmTC_51fa1.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-azG80B'
-        Building Fortran object CMakeFiles/cmTC_51fa1.dir/test_mpi.f90.o
-        /usr/bin/gfortran  -I/opt/intel/oneapi/mpi/2021.12/include/mpi/gfortran/9.1.0 -I/opt/intel/oneapi/mpi/2021.12/include -I/opt/intel/oneapi/mpi/2021.12/include/mpi  -c /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-azG80B/test_mpi.f90 -o CMakeFiles/cmTC_51fa1.dir/test_mpi.f90.o
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_30667/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_30667.dir/build.make CMakeFiles/cmTC_30667.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-MT6pdE'
+        Building Fortran object CMakeFiles/cmTC_30667.dir/test_mpi.f90.o
+        /usr/bin/gfortran  -I/opt/intel/oneapi/mpi/2021.12/include/mpi/gfortran/9.1.0 -I/opt/intel/oneapi/mpi/2021.12/include -I/opt/intel/oneapi/mpi/2021.12/include/mpi  -c /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-MT6pdE/test_mpi.f90 -o CMakeFiles/cmTC_30667.dir/test_mpi.f90.o
         f951: Fatal Error: Reading module ‘mpi_f08’ at line 1 column 2: Unexpected EOF
         compilation terminated.
-        make[1]: *** [CMakeFiles/cmTC_51fa1.dir/build.make:78: CMakeFiles/cmTC_51fa1.dir/test_mpi.f90.o] Error 1
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-azG80B'
-        make: *** [Makefile:127: cmTC_51fa1/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_30667.dir/build.make:78: CMakeFiles/cmTC_30667.dir/test_mpi.f90.o] Error 1
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-MT6pdE'
+        make: *** [Makefile:127: cmTC_30667/fast] Error 2
         
       exitCode: 2
   -
@@ -1359,37 +1359,37 @@ events:
     backtrace:
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
       - "/usr/local/share/cmake-3.28/Modules/FindMPI.cmake:1707 (_MPI_try_staged_settings)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
-      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:86 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:28 (libfind_find_mpi)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/Findhypre.cmake:29 (libfind_check_dependencies)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:32 (find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/LibFindMacros.cmake:761 (libfind_find_package)"
+      - "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns/FindHSF.cmake:74 (libfind_check_dependencies)"
       - "CMakeLists.txt:13 (find_package)"
     description: "The MPI test mpiver for Fortran in mode F90_MODULE"
     directories:
-      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-WJ91SA"
-      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-WJ91SA"
+      source: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-ve8c4G"
+      binary: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-ve8c4G"
     cmakeVariables:
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_Fortran_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/share/cmake/Modules/scns"
+      CMAKE_MODULE_PATH: "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/share/cmake/Modules/scns"
     buildResult:
       variable: "MPI_RESULT_Fortran_mpiver_F90_MODULE"
       cached: true
       stdout: |
-        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-WJ91SA'
+        Change Dir: '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-ve8c4G'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_439ca/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_439ca.dir/build.make CMakeFiles/cmTC_439ca.dir/build
-        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-WJ91SA'
-        Building Fortran object CMakeFiles/cmTC_439ca.dir/mpiver.f90.o
-        /usr/bin/gfortran  -I/opt/intel/oneapi/mpi/2021.12/include/mpi/gfortran/9.1.0 -I/opt/intel/oneapi/mpi/2021.12/include -I/opt/intel/oneapi/mpi/2021.12/include/mpi  -c /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-WJ91SA/mpiver.f90 -o CMakeFiles/cmTC_439ca.dir/mpiver.f90.o
-        Linking Fortran executable cmTC_439ca
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_439ca.dir/link.txt --verbose=1
-        /usr/bin/gfortran -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_439ca.dir/mpiver.f90.o -o cmTC_439ca  /opt/intel/oneapi/mpi/2021.12/lib/libmpifort.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
-        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-WJ91SA'
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cb96b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_cb96b.dir/build.make CMakeFiles/cmTC_cb96b.dir/build
+        make[1]: Entering directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-ve8c4G'
+        Building Fortran object CMakeFiles/cmTC_cb96b.dir/mpiver.f90.o
+        /usr/bin/gfortran  -I/opt/intel/oneapi/mpi/2021.12/include/mpi/gfortran/9.1.0 -I/opt/intel/oneapi/mpi/2021.12/include -I/opt/intel/oneapi/mpi/2021.12/include/mpi  -c /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-ve8c4G/mpiver.f90 -o CMakeFiles/cmTC_cb96b.dir/mpiver.f90.o
+        Linking Fortran executable cmTC_cb96b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb96b.dir/link.txt --verbose=1
+        /usr/bin/gfortran -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker -rpath -Xlinker /opt/intel/oneapi/mpi/2021.12/lib -Xlinker --enable-new-dtags CMakeFiles/cmTC_cb96b.dir/mpiver.f90.o -o cmTC_cb96b  /opt/intel/oneapi/mpi/2021.12/lib/libmpifort.so /opt/intel/oneapi/mpi/2021.12/lib/libmpi.so /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libdl.so 
+        make[1]: Leaving directory '/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_3d/CMakeFiles/CMakeScratch/TryCompile-ve8c4G'
         
       exitCode: 0
 ...

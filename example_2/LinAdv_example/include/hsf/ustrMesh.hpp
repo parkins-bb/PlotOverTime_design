@@ -36,14 +36,19 @@ class USTRMesh : public Mesh {
   friend class Region;
   friend class CollisionManager;
   /*! mesh IO tool for unstructure mesh */
+  // 用于非结构化网格的输入输出操作
   IO::UstrXdmfTool xdmfIO_;
   /*! helper class, used when constructing faces */
+  // 构造面时的辅助类
   FaceTable* facesTbl_;
   /*! helper class, used when constructing edges */
+  // 构造边时的辅助类
   EdgeTable* edgesTbl_;
   /*! node index mapping from local to global */
+  // 本地到全局的节点索引映射
   std::vector<llabel> nodeIdLocal2Global_;
   /*! partition method */
+  // 网格划分方法
   meshPartitionMethod partitionMethod_;
   struct FaceInfo {
     label elem1No;
@@ -51,10 +56,12 @@ class USTRMesh : public Mesh {
     int localInd1, localInd2;
     int orient1, orient2;
   };
+  // 存储面的信息
   std::vector<FaceInfo> facesInfo_;
 
   /// <owner/neighbor processID ,Shared to local index mapping >
   /// first build, used mainly for search
+  /// 共享实体的映射，共享面、边、节点的映射，用于搜索
   map<int, std::set<label>> sFaceId_;  /// shared faces
   map<int, std::set<label>> sEdgeId_;  /// shared edges
   map<int, std::set<label>> sNodeId_;  /// only vertices
@@ -69,11 +76,13 @@ class USTRMesh : public Mesh {
    *  -2 -> physical boundary
    *  >=0 -> shared face, id is face owner procId
    */
+  // 存储面的所有者信息
   std::vector<int> faceOwner_;
   std::vector<int> edgeOwner_; /*!< >=0 just mean it's a shared entity */
   std::vector<int> nodeOwner_; /*!< >=0 just mean it's a shared entity */
 
   /// then build
+  /// InterfaceInfo结构体用于存储与共享和ghost单元相关的信息，并包含一些列构造和清理这些信息的方法
   struct InterfaceInfo {
     std::vector<label> sharedFaces_;  /// non-ghost part
     std::vector<label> sharedEdges_;  /// non-ghost part
@@ -123,19 +132,24 @@ class USTRMesh : public Mesh {
     void clearGhostEntities();
   } interface_;
 
+  // 返回xdmfIO_对象的引用，用于进行输入和输出操作
   IO::UstrXdmfTool& getIOTool() { return xdmfIO_; }
 
   /*! * * * * * * * * * * * * * * * Topology  * * * * * * * * * * * * * */
   /*! elem2node data migration after mesh partition */
+  // 在网格划分后分配元素到处理器
   void distributeElemToProcs(const std::vector<label>& partition);
 
   /*! 3D:  */
   /*! calculate cell2face topo from cell2node topo,
    *  local face index, ignore process boundary */
+  // 从cell2node的拓扑计算cell2face的拓扑
   void calcCell2Face();
   /*! calculate face2cell and face2node table from cell2face topo */
+  // 从cell2face的拓扑计算face2cell和face2node表
   void calcFace2Cell();
   /*! communicate boundary face2cell and boundary face2node, may cost a lot */
+  // 
   void distributeBdrFaceTopo();
   /*!  calculate cell2cell topo from cell2xx and xx2cell topo */
   void calcCell2Cell(SetType type = SetType::FACE);
