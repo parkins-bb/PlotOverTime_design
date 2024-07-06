@@ -1,9 +1,0 @@
-Main {
-   log_file_name               = "3d-Hex.log"               // input not used
-   log_all_nodes               = TRUE                       // input not used
-   javis_dump_interval         = 10                         // input not used
-   javis_dump_dirname          = "javis_test3d_Hex"         // input not used
-   javis_number_procs_per_file = 1                          // input not used
-   restart_dump_interval       = 10                         // input not used
-   restart_dump_dirname        = "restart_test3d-Hex"       // input not used
-}

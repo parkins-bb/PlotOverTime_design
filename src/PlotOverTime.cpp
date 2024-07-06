@@ -25,12 +25,22 @@ void PlotOverTime::registerPlotFields(int id, const HSF::SetType type) {
     std::vector<int> validFieldIds;
     std::vector<std::string> fieldNames;
 
+    std::cout << "Attempting to register plot fields for ID " << id << " and SetType " << type << std::endl;
+
     for (int i = 0; i < region->getFieldNum(); ++i) {
         try {
             auto& field = region->getField<scalar>(i);
             if (field.getSetType() == type) {
                 validFieldIds.push_back(i);
                 fieldNames.push_back(field.getName());
+                std::cout << "Registered scalar field: " << field.getName() << " with ID: " << i << std::endl;            
+                    
+                // 输出字段内容
+                std::cout << "Field " << field.getName() << " content: ";
+                for (size_t j = 0; j < field.size(); j++) {
+                    std::cout << field[j] << " ";
+                }
+                std::cout << std::endl;
             }
         } catch (...) {
             try {
@@ -38,6 +48,14 @@ void PlotOverTime::registerPlotFields(int id, const HSF::SetType type) {
                 if (field.getSetType() == type) {
                     validFieldIds.push_back(i);
                     fieldNames.push_back(field.getName());
+                    std::cout << "Registered label field: " << field.getName() << " with ID: " << i << std::endl;
+
+                    // 输出字段内容
+                    std::cout << "Field " << field.getName() << " content: ";
+                    for (size_t j = 0; j < field.size(); j++) {
+                        std::cout << field[j] << " ";
+                    }
+                    std::cout << std::endl;
                 }
             } catch (...) {
                 // Handle other types if needed
@@ -56,12 +74,22 @@ void PlotOverTime::registerPlotFields(int id, const HSF::SetType type, std::vect
     std::vector<int> validFieldIds;
     std::vector<std::string> fieldNames;
 
+    std::cout << "Attempting to register specific plot fields for ID " << id << " and SetType " << type << std::endl;
+
     for (int fieldId : field_ids) {
         try {
             auto& field = region->getField<scalar>(fieldId);
             if (field.getSetType() == type) {
                 validFieldIds.push_back(fieldId);
                 fieldNames.push_back(field.getName());
+                std::cout << "Registered scalar field: " << field.getName() << " with ID: " << fieldId << std::endl;
+            
+                // 输出字段内容
+                std::cout << "Field " << field.getName() << " content: ";
+                for (size_t j = 0; j < field.size(); j++) {
+                    std::cout << field[j] << " ";
+                }
+                std::cout << std::endl;
             }
         } catch (...) {
             try {
@@ -69,6 +97,14 @@ void PlotOverTime::registerPlotFields(int id, const HSF::SetType type, std::vect
                 if (field.getSetType() == type) {
                     validFieldIds.push_back(fieldId);
                     fieldNames.push_back(field.getName());
+                    std::cout << "Registered label field: " << field.getName() << " with ID: " << fieldId << std::endl;
+                
+                    // 输出字段内容
+                    std::cout << "Field " << field.getName() << " content: ";
+                    for (size_t j = 0; j < field.size(); j++) {
+                        std::cout << field[j] << " ";
+                    }
+                    std::cout << std::endl;
                 }
             } catch (...) {
                 // Handle other types if needed
@@ -82,6 +118,8 @@ void PlotOverTime::registerPlotFields(int id, const HSF::SetType type, std::vect
 }
 
 void PlotOverTime::writeData(int time_step) {
+    // 调试输出
+    std::cout << "writeData called for time_step: " << time_step << std::endl;
     for (int ts = 0; ts <= time_step; ++ts) {
         for (const auto& entry : registeredSteps) {
             if (entry.first > time_step) {
@@ -102,28 +140,36 @@ void PlotOverTime::writeData(int time_step) {
                 for (int field_id : field_ids) {
                     try {
                         auto& field = region->getField<scalar>(field_id);
+                        std::cout << "Field (scalar) ID: " << field_id << ", size: " << field.size() << std::endl;
                         for (size_t j = 0; j < field.size(); ++j) {
                             if (static_cast<int>(j) == id) {
                                 rowData.push_back(static_cast<double>(field_id));  // FieldID
                                 rowData.push_back(static_cast<double>(field[j]));  // Value
+                                std::cout << "Storing value for field " << field_id << ": " << field[j] << std::endl;
                             }
                         }
                     } catch (...) {
                         try {
                             auto& field = region->getField<label>(field_id);
+                            std::cout << "Field (label) ID: " << field_id << ", size: " << field.size() << std::endl;
                             for (size_t j = 0; j < field.size(); ++j) {
                                 if (static_cast<int>(j) == id) {
                                     rowData.push_back(static_cast<double>(field_id));  // FieldID
                                     rowData.push_back(static_cast<double>(field[j]));  // Value
+                                    std::cout << "Storing value for field " << field_id << ": " << field[j] << std::endl;
                                 }
                             }
                         } catch (...) {
+                            std::cerr << "Failed to get field for ID: " << field_id << std::endl;
                             // Handle other types if needed
                         }
                     }
                 }
 
+                std::cout << "Storing data for key: (" << id << ", " << type << ")" << std::endl;
                 fieldData_[key].push_back(rowData);
+            } else {    
+                std::cerr << "No registered fields for key: (" << id << ", SetType: " << type << ")" << std::endl;
             }
         }
     }
@@ -143,6 +189,8 @@ void PlotOverTime::flushData() {
             std::cerr << "Failed to open file: " << filename << std::endl;
             continue;
         }
+        
+        std::cout << "Writing data to file: " << filename << std::endl;
 
         // 写入表头
         file << "TimeStep";
@@ -164,6 +212,7 @@ void PlotOverTime::flushData() {
         }
 
         file.close();
+        std::cout << "Data flushed to file: " << filename << std::endl;
     }
 
     fieldData_.clear();

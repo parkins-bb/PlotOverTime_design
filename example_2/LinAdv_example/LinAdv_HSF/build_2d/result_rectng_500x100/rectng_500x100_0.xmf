@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf xmlns:xi="http://www.w3.org/2001/XInclude" Version="3.0">
+ <Domain>
+  <Grid CollectionType="None" GridType="Collection" Name="rectng_500x100">
+   <Time Value="0" />
+   <Grid CollectionType="None" Name="internalMesh">
+    <Geometry Type="XYZ">
+     <DataItem Dimensions="50601 3" Name="Point Data" Format="HDF">rectng_500x100_0.h5:rectng_500x100/Geometry</DataItem>
+    </Geometry>
+    <Topology Type="Mixed">
+     <DataItem Dimensions="250000" DataType="Int" Format="HDF">rectng_500x100_0.h5:rectng_500x100/Topology</DataItem>
+    </Topology>
+    <Attribute Center="Cell" Name="attributeID" Type="Scalar">
+     <DataItem Dimensions="50000" Format="HDF">rectng_500x100_0.h5:rectng_500x100/attributeID</DataItem>
+    </Attribute>
+    <Attribute Center="Cell" Name="processID" Type="Scalar">
+     <DataItem Dimensions="50000" Format="HDF">rectng_500x100_0.h5:rectng_500x100/processID</DataItem>
+    </Attribute>
+    <Attribute Center="Cell" Name="UUU" Type="Scalar">
+     <DataItem Dimensions="50000" Format="HDF">rectng_500x100_0.h5:rectng_500x100/UUU</DataItem>
+    </Attribute>
+   </Grid>
+   <Grid CollectionType="None" GridType="Collection" Name="subset">
+    <Grid Type="EDGE" ID="1" Name="1">
+     <Geometry Type="XYZ">
+      <DataItem Dimensions="50601 3" Name="Point Data" Format="HDF">rectng_500x100_0.h5:rectng_500x100/Geometry</DataItem>
+     </Geometry>
+     <Topology Type="Mixed">
+      <DataItem Dimensions="400" DataType="Int" Format="HDF">rectng_500x100_0.h5:rectng_500x100/EDGE_1_Subset_Topo</DataItem>
+     </Topology>
+    </Grid>
+   </Grid>
+  </Grid>
+ </Domain>
+</Xdmf>

@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/source
+# Install script for directory: /home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zhaixiuxi/workspace/PlotOverTime_design/example/LinAdv_example/LinAdv_HSF/build_2d/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zhaixiuxi/workspace/PlotOverTime_design/example_2/LinAdv_example/LinAdv_HSF/build_2d/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

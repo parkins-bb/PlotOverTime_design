@@ -25,10 +25,10 @@ public:
     PlotOverTime(Region* reg, const std::string& directory);
     ~PlotOverTime();
 
-    void registerByStep(int id, SetType type, int time_step);
-    void registerByTime(int id, SetType type, int time);
-    void registerPlotFields(int id, SetType type);
-    void registerPlotFields(int id, SetType type, std::vector<int>& field_ids);
+    void registerByStep(int id, const SetType type, int time_step);
+    void registerByTime(int id, const SetType type, int time_step);
+    void registerPlotFields(int id, const SetType type);
+    void registerPlotFields(int id, const SetType type, std::vector<int>& field_ids);
     void writeData(int time_step);
     void flushData();
     std::string toString(SetType type);
